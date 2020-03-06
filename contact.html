@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    
+</head>
+<body>
+    <hr>
+    <table cellspacing = "10">
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td>|</td>
+            <td><a href="contact.html">Contact</a></td>
+            <td>|</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <img src="./assets/images/rebecca.JPG" alt="Rebecca's profile image">
+            </td>
+            <td>
+                <h1>Rebecca Samuel</h1>
+                <h3>Student, Addis Ababa Institute of Technology</h3>
+                <p>Hi there,</p>
+                <p>I am Rebecca Samuel, I am an expert <strong>Java</strong> Developer who has been working on Java since 
+                <em>3</em> years. I am passionate about working in different types of programming languages.</p>
+            </td>
+        </tr>
+    </table>
+
+<table cellspacing = "10" cellpadding = "10">
+<tr>
+    <td><h3>Contact Me With the following Information</h3> </td>
+</tr>
+<form method="POST" action="mailto:se.rebecca.samuel@gmail.com"  enctype="utf-8">
+    <tr>
+        <td><label for="name">First Name: </label></td>
+        <td><input type="text" name="fName" id = "fName" pattern="[A-Za-z]{1,20}" title="Numbers aren't allowed in names" required></td>
+    </tr>
+    <tr>
+        <td><label for="name">Last Name: </label></td>
+        <td><input type="text" name="lName" id="lName" pattern="[A-Za-z]{1,20}" title="Numbers aren't allowed in names" required></td>
+    </tr>
+    <tr>
+        <td><label for="email">Email: </label></td>
+        <td><input type="email" name="email" id="email" required></td>
+    </tr>
+    <tr>
+        <td><label for="password">Password: </label></td>
+        <td><input type="password" name = "pwd" id="pwd" pattern=".{8,}" title="Eight or more characters" required></td>
+    </tr>
+    <tr>
+        <td><label for="telephone">Phone Number: </label></td>
+        <td><input type="tel" name="tel" id="tel"></td>
+    </tr>
+    <tr>
+        <td><label for="date"> Birth Date:</label></td>
+        <td><input type="date" name="date" id = date></td>
+    </tr>
+    <tr>
+        <td><label for="country">Country:</label></td>
+        <td><select name="country" id="">
+            <option value="E">Ethiopia</option>
+            <option value="U">U.S.A</option>
+            <option value="K">Kenya</option>
+            <option value="S">South Africa</option>
+            <option value="D">Djibouti</option>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="detail">Leave Your Comment Here: </label></td>
+        <td><textarea name="comment" id="comment" cols="30" rows="10"></textarea></td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Submit"></td>
+    </tr>
+    
+
+</form>
+</table>
+<hr>
+<table cellspacing = "10">
+    <tr>
+        <td><a href="https://www.facebook.com/rebecca.samuel.1420" target="_blank">Facebook</a></td>
+        <td>|</td>
+        <td><a href="https://www.instagram.com/rebecca_samuel/" target = _blank>Instagram</a></td>
+    </tr>
+</table>
+<hr>
+<p allign = "center">Developed by Rebecca Samuel &copy;2020</p>
+<hr>
+</body>
+</html>
