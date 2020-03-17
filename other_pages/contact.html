@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.map, form{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         #sticky_nav{
+         z-index:2;
+        }
+        input[type=text],input[type=tel],input[type=email], input[type=date], input[type=password], select, textarea {
+            padding: 12px 0;
+            width: 100%;
+            display:block;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background: #f1f1f1;
+            border: none;
+        }
+
+        form {
+            position: relative;
+            width: 30%;
+            margin: 0 0 5% 5%;
+            float: left;
+            padding: 0;
+        }
+
+        label {
+            padding: 12px 0 12px 0;
+            display: inline-block;
+            font-weight: bolder;
+            font-size: 15px;
+            }
+
+        input[type=submit]{
+            width: 40%;
+            padding: 10px ;
+            margin: 5% 0 5% 30%;
+            background-color:  darkgray ;
+            color: honeydew;
+            cursor: pointer;
+            left: 15%;
+            display: block;
+        }
+
+        input[type=submit]:hover{
+            background-color: gray
+        }
+
+        #map {
+            float: left;
+            width: 50%;
+            margin: 5% 5% 9% 9%;
+            
+        }
+
+
+    </style>
+    <link rel = "icon" href =  
+    "./assets/images/icon.png" 
+            type = "image/x-icon"> 
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+</head>
+<body>
+    <header id="sticky_nav">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="blog.html">BLOG</a>
+                </li>
+                <li>
+                    <a class = "active" href="contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="gallery.html">GALLERY</a>
+                </li>
+                <li>
+                    <a href="../myworks.html">MY_WORKS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <img class="imgs" src="../assets/images/rebecca.png" alt="Rebecca's profile image">
+        <h1>Rebecca Samuel</h1>
+        <h3>Student, Addis Ababa Institute of Technology</h3>
+        <p>Hi there,</p>
+        <p>I am Rebecca Samuel, I am an expert <strong>Java</strong> Developer who has been working on Java since 
+        <em>3</em> years. I am passionate about working in different types of programming languages.</p>
+    </section>
+    <div id="bottom_border"></div>
+        
+    <h3 style="margin: 5% 0 1% 2%">Contact Me With the following Information</h3>
+
+    <form method="POST" action="mailto:se.rebecca.samuel@gmail.com"  enctype="utf-8">
+
+        <label for="name">First Name: </label>
+        <input type="text" name="fName" id = "fName" pattern="[A-Za-z]{1,20}" title="Numbers aren't allowed in names" required>
+    
+        <label for="name">Last Name: </label>
+        <input type="text" name="lName" id="lName" pattern="[A-Za-z]{1,20}" title="Numbers aren't allowed in names" required>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required>
+    
+        <label for="password">Password: </label>
+        <input type="password" name = "pwd" id="pwd" pattern=".{8,}" title="Eight or more characters" required>
+
+        <label for="telephone">Phone Number: </label>
+        <input type="tel" name="tel" id="tel">
+
+        <label for="date"> Birth Date:</label>
+        <input type="date" name="date" id = date>
+
+        <label for="country">Country:</label>
+        <select name="country" id="">
+            <option value="E">Ethiopia</option>
+            <option value="U">U.S.A</option>
+            <option value="K">Kenya</option>
+            <option value="S">South Africa</option>
+            <option value="D">Djibouti</option>
+        
+        <label for="comment">Leave Your Comment </label> 
+        <textarea style="margin-top: 5%;" name="comment" id="comment" cols="30" rows="10" placeholder="Please leave a comment"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id = "map">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="700" id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=addis%20ababa%20institute%20of%20technology&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com">
+            emojilib.com</a></div><style>.mapouter{position: relative;;text-align:right;height:700px;width:600px;}.gmap_canvas 
+            {overflow:hidden;background:none!important;height:700px;width:600px;}</style></div>
+    </div>
+
+
+    <div class="bottom_border"></div>
+
+    <footer>
+        <ul>
+            <li>Rebecca Samuel &copy;2020</li>
+            <li>|</li>
+            <li><a href="https://www.facebook.com/rebecca.samuel.1420" target="_blank">Facebook</a></li>  
+            <li>|</li>
+            <li><a href="https://www.instagram.com/rebecca_samuel/" target = _blank>Instagram</a></li>
+        </ul>
+    </footer>
+   
+</body>
+</html>
