@@ -3,44 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Rebecca's CV</title>
     <link rel = "icon" href =  
     "./assets/images/icon.png" 
             type = "image/x-icon"> 
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .border{
+            border:  #e4e2e2 1px solid;
+            clear: left;
+        }
+
+        .dif_margin {
+            margin-top: 15px;
+        }
+
+        .column {
+            float: left;
+            margin: 0 20px 0 0;
+        }
+
+        h2{
+            font-size: 17px;
+        }
+
+    </style>
 
 </head>
 <body>
     <!-- This is the first step  -->
     <!-- Navigation -->
-<hr>
-<table cellspacing = "10">
-    <tr>
-        <td><a href="index.html">Home</a></td>
-        <td>|</td>
-        <td><a href="contact.html">Contact</a></td>
-        <td>|</td>
-        <td><a href="gallery.html">Gallery</a></td>
-    </tr>
-</table>
-<hr>
-<table>
-    <tr>
-        <td>
-            <img src="./assets/images/rebecca.JPG" alt="Rebecca's profile image">
-        </td>
-        <td>
-            <h1>Rebecca Samuel</h1>
-            <h3>Student, Addis Ababa Institute of Technology</h3>
-            <p>Hi there,</p>
-            <p>I am Rebecca Samuel, I am an expert <strong>Java</strong> Developer who has been working on Java since 
-            <em>3</em> years. I am passionate about working in different types of programming languages.</p>
-        </td>
-    </tr>
-</table>
-<hr>  
-<h3>Hobbies and Interests</h3>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class = "active" href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="other_pages/blog.html">BLOG</a>
+                </li>
+                <li>
+                    <a href="other_pages/contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="other_pages/gallery.html">GALLERY</a>
+                </li>
+                <li>
+                    <a href="myworks.html">MY_WORKS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <img class="imgs" style="padding-bottom: 3%;" src="./assets/images/rebecca.png" alt="Rebecca's profile image">
+        <h1>Rebecca Samuel</h1>
+        <h3>Student, Addis Ababa Institute of Technology</h3>
+        <p>Hi there,</p>
+        <p>I am Rebecca Samuel, I am an expert <strong>Java</strong> Developer who has been working on Java since 
+        <em>3</em> years. I am passionate about working in different types of programming languages.</p>
+    </section>
+<div class="border"></div> 
+
+<!-- Section 2 -->
+<section class="dif_margin">
+    <h3>Hobbies and Interests</h3>
 <!-- Put your interests here.. -->
-<ul>
+<ul >
     <li>Sport: I like to watch and play
         <ul>
             <li>Tennis</li>
@@ -62,51 +94,50 @@
         </ul>
     </li>
 </ul>
-<hr>
-<table cellspacing = "10">
+</section>
+<div class="border"></div>
+
+<section class="dif_margin">
     <h3>Work Experience</h3>
-    <thead>
-        <tr>
 
-            <th>Date</th>
-            <th>Job Title</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>March 2018</td>
-            <td>Volunteer Teacher</td>
-        </tr>
-        <tr>
-            <td>July 2019</td>
-            <td>Programming Intern</td>
-        </tr>
-    </tbody>
-</table>
-<hr>
-<h3>Top Skills</h3>
-<!-- THis is the top skills table -->
-<table cellspacing = "10">
-    <tr>
-        <td>Java for Web and Android</td>
-        <td>⭐⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-        <td>HTML, CSS and Javascript</td>
-        <td>⭐⭐⭐⭐⭐</td>
-    </tr>
-</table>
-<hr>
-<table cellspacing = "10">
-    <tr>
-        <td><a href="https://www.facebook.com/rebecca.samuel.1420" target="_blank">Facebook</a></td>
-        <td>|</td>
-        <td><a href="https://www.instagram.com/rebecca_samuel/" target = _blank>Instagram</a></td>
-    </tr>
-</table>
+    <div class="column">
+        <h2>Date</h2>
+        <ul>
+            <li >March 2018</li>
+            <li>July 2019</li>
+        </ul>
+    </div>
 
-<hr>
-<p allign = "center">Developed by Rebecca Samuel &copy;2020</p>
-<hr>
+    <div class="column">
+        <h2>Job Title</h2>
+        <ul>
+            <li>Volunteer Teacher</li>
+            <li>Programming Intern</li>
+        </ul>
+    </div>
+
+</section>
+
+    
+<div class="border"></div>
+
+<section class="dif_margin">
+    <h3>Top Skills</h3>
+    <ul>
+        <li>Java for Web and Android</li>
+        <li>HTML, CSS and Javascript</li>
+    </ul>
+</section>
+    
+<div class="bottom_border"></div>
+    <footer>
+        <ul>
+            <li>Rebecca Samuel &copy;2020</li>
+            <li>|</li>
+            <li><a href="https://www.facebook.com/rebecca.samuel.1420" target="_blank">Facebook</a></li>  
+            <li>|</li>
+            <li><a href="https://www.instagram.com/rebecca_samuel/" target = _blank>Instagram</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
