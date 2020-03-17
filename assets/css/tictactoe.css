@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+h1 {
+    text-align: center;
+    color: darkolivegreen;
+    font-weight: bold;
+    margin: 3%;
+    
+  }
+
+  td {
+      width: 200px;
+      height: 200px;
+  }
+
+  #cell1, #cell2, #cell3, #cell4, #cell5, #cell6 {
+      border-bottom: darkolivegreen solid 5px;
+  }
+
+  #cell1, #cell2, #cell4, #cell5, #cell7, #cell8 {
+    border-right: darkolivegreen solid 5px;
+  }
+
+  #board{
+      width: 50%;
+      margin: 5% 30% 20% 28%;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
