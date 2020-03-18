@@ -13,12 +13,19 @@
          body {
         background-image: linear-gradient(to right,rgb(155, 151, 151),rgb(177, 173, 173));
     }
-    .innerbox {
+    /* .innerbox {
         background-color: white;
         width: 70%;
         margin-left: 15%;
         margin-top: 7%;
-    }
+    } */
+
+    article {
+        padding: 10px;
+        margin: 10px;
+        background: white;
+      }
+
     .bold {
         font-weight: bold;
     }
@@ -41,7 +48,17 @@
     section p ul li{
         line-height: 1.6;
     }
-        
+
+    section {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;   
+    }
+
+    /* article {
+        flex: 30%;
+    }
+         */
     </style>
  
 </head>
@@ -68,45 +85,36 @@
         </nav>
     </header>
 
-<div class="innerbox">
-    <div id="content">
         <section>
-        <p class="title">Shoud We Use Relative Size When Styling an HTML Element ?</p>
-        <article>
-        <p>
-            Using absolute length units like pixels can be easy. However, if a user changes the default font-size of browser or device, the header’s font-size (say 20px) will remain 20 px. Hence user’s font preferences won’t be reflected, which is not a good user experience.  Thankfully, setting font-sizes in pixels doesn’t completely ruin accessibility. The user can still zoom in and out with ctrl plus +/-. However, web developers can do better as zooming in or out is not very convenient for the end user.
-        </p>
-        <p>
-            Using relative size like EM and REM gives us flexibility in our designs, and the ability to scale elements up and down, instead of being stuck with fixed sizes. We can use this flexibility to make our designs easier to adjust during development, more responsive, and to allow browser users to control the overall scale of sites for maximum readability.
-        </p>
-        <p>
-            Responsive design can help solve a lot of problems for websites. It will make sites mobile-friendly, improve the way it looks on devices with both large and small screens, and increase the amount of time that visitors spend on the site. It can also help improve rankings of the website in search engines.
-        </p>
-        <p>
-            All in all, although using absolute size units is easier, it’s very important to consider using relative size to create a good experience for every user and increase the number of users visiting our site.
-        </p>
-        </article>
-        <p class="date">March 17, 2020 : 10:00 AM</p>
-        </section>
-        
-        <!-- Second Section -->
-        <!-- <section>
-            <p class="title">How is a Font-Size other than the Default Interpreted ?</p>
             <article>
+            <p class="title">Shoud We Use Relative Size When Styling an HTML Element ?</p>
+            <p>
+                Using absolute length units like pixels can be easy. However, if a user changes the default font-size of browser or device, the header’s font-size (say 20px) will remain 20 px. Hence user’s font preferences won’t be reflected, which is not a good user experience.  Thankfully, setting font-sizes in pixels doesn’t completely ruin accessibility. The user can still zoom in and out with ctrl plus +/-. However, web developers can do better as zooming in or out is not very convenient for the end user.
+            </p>
+            <p>
+                Using relative size like EM and REM gives us flexibility in our designs, and the ability to scale elements up and down, instead of being stuck with fixed sizes. We can use this flexibility to make our designs easier to adjust during development, more responsive, and to allow browser users to control the overall scale of sites for maximum readability.
+            </p>
+            <p>
+                Responsive design can help solve a lot of problems for websites. It will make sites mobile-friendly, improve the way it looks on devices with both large and small screens, and increase the amount of time that visitors spend on the site. It can also help improve rankings of the website in search engines.
+            </p>
+            <p>
+                All in all, although using absolute size units is easier, it’s very important to consider using relative size to create a good experience for every user and increase the number of users visiting our site.
+            </p>
+            <p class="date">March 17, 2020 : 10:00 AM</p>
+            </article>
+        
+
+            <article>
+            <p class="title">How is a Font-Size other than the Default Interpreted ?</p>
             <p>
                 The default browser font-size is 16px, it’s the also the same thing as setting the font-size to 100% because the % value relates to the default browser font size. All HTML tags inherit a font-size of 16px. If we set the font-size to 200px, it will be interpreted as being 12.5 times the body’s size or 11.5 times bigger than the body. 
             </p>
-
-            
-            
-            </article>
             <p class="date">March 13, 2020 : 3:00 am</p>
-        </section> -->
-        
-        <!-- Third Section -->
-        <section style="margin-bottom: 0%;">
-            <p class="title">New Features of CSS3</p>
+            </article>
+
             <article>
+            <p class="title">New Features of CSS3</p>
+
             <p>
                 <span class="bold">Pseudo-classes: </span>A few more pseudo-class selectors were added in CSS3. One is the :root selector, which allows designers to point to the root element of a document. In addition, as a complement to the :first-child selector, the :last-child was added. With it one can select the last element named of a parent element.  A functional notation for selecting specified elements that fail a test has also been created. The negation pseudo-class selector, :not can be coupled with almost any other selector that has been implemented. 
             
@@ -121,30 +129,32 @@
                 <span class="bold">Box Sizing: </span>It doesn't feel at all intuitive to have the CSS width and height of an element affected by its padding and borders. It can set it to border box, which makes elements behave exactly the way you expect. 
             </p>
             <p>
-               <span class="bold">Linear Gradients: </span>W3C added the syntax for generating linear gradients with CSS3.
+                <span class="bold">Linear Gradients: </span>W3C added the syntax for generating linear gradients with CSS3.
             </p>
             <p>
-               <span class="bold">Multiple Background Images: </span>In CSS3, there’s no need to include an element for every background image; it provides us with the ability to add more than one background image to any element.
+                <span class="bold">Multiple Background Images: </span>In CSS3, there’s no need to include an element for every background image; it provides us with the ability to add more than one background image to any element.
             </p>
             <p>
                 <span class="bold">Drop Shadows: </span>CSS3 provides the ability to add drop shadows to elements using the box-shadow property. This property lets you specify the color, height, width, blur, and offset of one or multiple inner and/or outer drop shadows on your elements.
             </p>
-            </article>
             <p class="date">March 17, 2020 : 4:00 PM</p>
+            </article>  
+
         </section>
-        <section>
+
+        <!-- <section>
             <p class="title">References</p>
             <ul>
                 <li><a target="_blank" href="https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97">Medium</a></li>
                 <li><a target="_blank" href="https://engageinteractive.co.uk/blog/em-vs-rem-vs-px">Engage Interactive</a></li>
                 <li><a target="_blank" href="https://freshsparks.com/why-responsive-design-is-important/">Freshsparks</a></li>
                 <li><a target="_blank" href="https://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use">Tutorialzine</a></li>
-                <!-- <li><a href="https://stackoverflow.com/questions/6803016/css-100-font-size-100-of-what">Stack Overflow</a></li> -->
+                <li><a href="https://stackoverflow.com/questions/6803016/css-100-font-size-100-of-what">Stack Overflow</a></li>
             </ul>
-        </section>
+        </section> -->
         
         
-        </div>
+    </div>
 </div>
  
 </body>
