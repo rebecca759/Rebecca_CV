@@ -24,7 +24,7 @@ h1{
 
  /* 1.Hungary */
 #hungary li{
-    height: 86.6px;
+    height: 5.4rem;
     list-style-type: none;
 }
 
@@ -50,7 +50,7 @@ h1{
 
 /* 2. Chile */
 #chile li {
-    height: 130px;
+    height: 8.1rem;
     list-style-type: none;
 }
 
@@ -64,7 +64,7 @@ h1{
 
 #chile::before {
     content: '★';
-    font-size: 80px;
+    font-size: 5rem;
     text-align: center;
     color: white;
     position: absolute;

@@ -69,11 +69,35 @@ nav > ul > li:hover:not(.active) {
     background-color: lightgray;
 }
 
+
 nav > ul > li > a.active {
     background-color: lightgray;
     color: white;
 }
 
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    nav > ul > li {
+        display: block;
+    }
+
+    header {
+        position: static;
+    }
+    .labels {
+        display:block;
+        cursor: pointer; 
+    }
+    nav > ul > li {
+        text-align: center;
+        width: 100%;
+    }
+    nav > ul > li > a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+}
 .imgs {
     float: left;
     border-radius: 100%;
@@ -92,7 +116,6 @@ nav > ul > li > a.active {
     clear: left;
     padding-bottom: 5%;
 }
-
 
 footer{
     height: 3%;
