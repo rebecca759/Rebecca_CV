@@ -60,10 +60,19 @@
         #map {
             float: left;
             width: 50%;
-            margin: 5% 5% 9% 9%;
-            
+            margin: 5% 5% 9% 9%; 
         }
 
+        @media screen and (max-width: 800px) {
+            #map {
+               float: left;
+               width: 100%;
+            }
+            form {
+                width: 80%;
+            }
+
+        }
 
     </style>
     <link rel = "icon" href =  
@@ -149,11 +158,12 @@
             emojilib.com</a></div><style>.mapouter{position: relative;;text-align:right;height:700px;width:600px;}.gmap_canvas 
             {overflow:hidden;background:none!important;height:700px;width:600px;}</style></div>
     </div>
+    
 
 
     <div class="bottom_border"></div>
 
-    <footer>
+    <footer style="clear: left;">
         <ul>
             <li>Rebecca Samuel &copy;2020</li>
             <li>|</li>
