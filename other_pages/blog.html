@@ -13,12 +13,6 @@
          body {
         background-image: linear-gradient(to right,rgb(155, 151, 151),rgb(177, 173, 173));
     }
-    /* .innerbox {
-        background-color: white;
-        width: 70%;
-        margin-left: 15%;
-        margin-top: 7%;
-    } */
 
     article {
         padding: 10px;
@@ -65,7 +59,9 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <label class = "label" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <ul class="menu">
                 <li>
                     <a href="../index.html">HOME</a>
                 </li>
@@ -85,7 +81,7 @@
         </nav>
     </header>
 
-        <section>
+        <section class = "section1">
             <article>
             <p class="title">Shoud We Use Relative Size When Styling an HTML Element ?</p>
             <p>
